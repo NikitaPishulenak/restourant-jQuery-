@@ -1,10 +1,14 @@
 $(document).ready(function () {
     $("#btnVeg").click(function () {
-        $("ul.meat").replaceWith("<li class='vegan'>Вегитарианское блюдо</li>");
-        $m=$(".meat").detach();
+        $("ul.meat").replaceWith("<li class='vegan'>В2</li>");
+        $m=$("li.meat").detach();
 
         $("#btnNoVeg").click(function () {
-            $(".mashroom").before($m);
+
+
+            $(".hideText").after($m);
+            $(".vegan").detach();
+            $m="";
 
         });
 
