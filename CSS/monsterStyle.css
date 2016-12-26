@@ -1,0 +1,65 @@
+#headerName{
+    display: block;
+    text-align: center;
+    margin: 1% auto;
+}
+
+#frame{
+    position: absolute;
+    display: block;
+    text-align: center;
+
+    background-image: url("../image/frame.png");
+    /*left:60%;*/
+    /*top:15%;*/
+    /*margin: 5% auto;*/
+    width: 545px;
+    height: 629px;
+    overflow: hidden;
+}
+
+#picture-box{
+    position: relative;
+    top:84px;
+    left: 91px;
+    width:367px;
+    height: 460px;
+    overflow: hidden;
+    border: solid darkred 2px;
+}
+
+.face{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#monsterHead{
+    height: 172px;
+}
+#monsterNose{
+    height: 79px;
+}
+#monsterNose{
+    height: 86px;
+}
+#monsterMounth{
+    height: 86px;
+}
+
+body{
+    background: black;
+}
+
+#container{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.lightning{
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
