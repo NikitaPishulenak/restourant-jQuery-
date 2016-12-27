@@ -7,9 +7,11 @@ $(document).ready(function () {
     $("#monsterHead").click(function () {
         if(headerClick<9){
             headerClick++;
+            $(this).animate({left: "-=367px"}, "5000");
         }
         else{
             headerClick=0;
+            $(this).animate({left: "0px"}, "5000");
         }
 
         console.log("Лоб= "+headerClick);
@@ -18,9 +20,11 @@ $(document).ready(function () {
     $("#monsterEyes").click(function () {
         if(eyesClick<9){
             eyesClick++;
+            $(this).animate({left: "-=367px"}, "5000");
         }
         else{
             eyesClick=0;
+            $(this).animate({left: "0px"}, "5000");
         }
         console.log("Глаза= "+headerClick);
     });
@@ -28,9 +32,11 @@ $(document).ready(function () {
     $("#monsterNose").click(function () {
         if(noseClick<9){
             noseClick++;
+            $(this).animate({left: "-=367px"}, "5000");
         }
         else{
             noseClick=0;
+            $(this).animate({left: "0px"}, "5000");
         }
         console.log("Нос= "+headerClick);
     });
@@ -38,11 +44,29 @@ $(document).ready(function () {
     $("#monsterMounth").click(function () {
         if(mounthClick<9){
             mounthClick++;
+            $(this).animate({left: "-=367px"}, "5000");
         }
         else{
             mounthClick=0;
+            $(this).animate({left: "0px"}, "5000");
         }
         console.log("Рот= "+headerClick);
+    });
+
+    $("#picure").click(function () {
+        $("#picure").animate({
+            width: "800px",
+            height: "600px",
+            left:"-=500px"},
+        "5000");
+
+        $("#picure").click(function () {
+            $(this).animate({
+                width: "400px",
+                height: "300px",
+                left:"800px"}, "5000");
+        });
+
     });
 
 });
