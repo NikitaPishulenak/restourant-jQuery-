@@ -1,0 +1,16 @@
+#my_hand{
+    position: absolute;
+    height: 10em;
+    width: 30em;
+    border:solid gray 2px;
+}
+
+h1{
+display: inline;
+}
+#controls
+{
+    border: dotted deeppink 3px;
+    position: relative;
+    top: 11em;
+}
